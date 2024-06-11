@@ -76,7 +76,7 @@ const Header = () => {
             {"<"} DevJ {">"}
           </span>
         </div>
-        <nav className="hidden lg:flex lg:items-center lg:space-x-4">
+        <nav className="hidden lg:flex lg:items-center lg:space-x-4 cursor-pointer">
           <Link
             to="projects"
             smooth={true}
@@ -127,7 +127,7 @@ const Header = () => {
               : "bg-transparent"
           }`}
         >
-          <ul className="flex flex-col items-start mt-4 space-y-4 ">
+          <ul className="flex flex-col items-start mt-4 space-y-4 cursor-pointer ">
             <li>
               <Link
                 onClick={toggleMenu}
