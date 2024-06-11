@@ -64,10 +64,10 @@ const Header = () => {
     >
       <header
         ref={headerRef}
-        className={`fixed top-0 left-0 right-0   p-4 flex lg:justify-start justify-between items-center z-50
+        className={`fixed top-0 left-0 right-0   p-4 flex lg:justify-start justify-between items-center z-40
         ${
           isScrolled
-            ? "bg-white bg-opacity-50"
+            ? "bg-white bg-opacity-60"
             : "bg-transparent"
         }`}
       >
@@ -114,16 +114,16 @@ const Header = () => {
         </button>
       </header>
       <div
-        className="menu-bar-wrapper  fixed left-0 right-0 "
+        className="menu-bar-wrapper  fixed left-0 right-0 z-40"
         style={{ top: `${headerHeight}px` }}
       >
         <div
-          className={`menu-bar  lg:hidden  p-4 z-40 ${
+          className={`menu-bar  lg:hidden  p-4  ${
             isOpen ? "menu-bar-open" : ""
           } 
           ${
             isScrolled
-              ? "bg-white bg-opacity-50"
+              ? "bg-white bg-opacity-60"
               : "bg-transparent"
           }`}
         >
