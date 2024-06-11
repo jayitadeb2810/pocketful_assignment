@@ -3,8 +3,12 @@ import React, {
   useRef,
   useState,
 } from "react"
+import Typewriter from "./Typewriter"
 import { Link, Element } from "react-scroll"
 import MenuIcon from "@mui/icons-material/Menu"
+import GitHubIcon from "@mui/icons-material/GitHub"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import EmailIcon from "@mui/icons-material/Email"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -165,6 +169,21 @@ const Header = () => {
               </Link>{" "}
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-[#121235] text-center space-y-4">
+        <h1 className=" lg:text-8xl font-light text-6xl">
+          Jayita Deb
+        </h1>
+        <Typewriter
+          text={
+            "Building dynamic web solutions with passion and fresh perspectives"
+          }
+        />
+        <div className="flex space-x-4 cursor-pointer ">
+          <GitHubIcon />
+          <LinkedInIcon />
+          <EmailIcon />
         </div>
       </div>
     </div>
