@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <div
-      className="relative h-[200vh]  bg-cover bg-center"
+      className="relative h-[100vh]  bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1717977600&semt=sph')",
@@ -153,6 +153,8 @@ const Header = () => {
               >
                 About
               </Link>{" "}
+            </li>
+            <li>
               <Link
                 onClick={toggleMenu}
                 to="skills"
