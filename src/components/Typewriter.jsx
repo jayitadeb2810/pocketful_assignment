@@ -15,7 +15,7 @@ const Typewriter = ({ text }) => {
       setCurrentIndex(
         (prevIndex) => prevIndex + 1
       )
-    }, 100)
+    }, 50)
 
     if (currentIndex >= text.length) {
       clearInterval(interval)
@@ -25,9 +25,9 @@ const Typewriter = ({ text }) => {
   }, [currentIndex, text])
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex md:items-start h-[50px] justify-center items-center">
       <div className="relative">
-        <div className="text-[18px] font-light text-center inline-block">
+        <div className="text-[18px] font-normal  inline-block text-center md:text-start ">
           {displayedText}
         </div>
       </div>

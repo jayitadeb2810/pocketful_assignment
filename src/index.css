@@ -9,6 +9,14 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
+}
+
+.transition-none {
+  transition: none;
+}
+.transition-delay-250 {
+  transition-delay: 250ms;
 }
 
 .menu-bar-wrapper {
@@ -16,7 +24,8 @@ html {
 }
 
 .menu-bar {
-  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 0.5s ease,
+    opacity 0.5s ease;
   transform: translateY(-150%);
   opacity: 0;
 }
@@ -24,4 +33,17 @@ html {
 .menu-bar-open {
   transform: translateY(0);
   opacity: 1;
+}
+
+@keyframes fillSkill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--skill-width);
+  }
+}
+
+.animate-skill {
+  animation: fillSkill 2s ease-out forwards;
 }
